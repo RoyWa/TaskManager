@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="tern-feature"
+      label="%featureName"
+      version="0.10.0.201506172156"
+      provider-name="%featureProvider">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="minimal-json"/>
+   </requires>
+
+   <plugin
+         id="ternjs"
+         download-size="12518"
+         install-size="71447"
+         version="0.10.0.201506172156"
+         unpack="false"/>
+
+   <plugin
+         id="tern.eclipse.ide.ui"
+         download-size="239"
+         install-size="469"
+         version="0.10.0.201506172156"
+         unpack="false"/>
+
+   <plugin
+         id="tern.eclipse"
+         download-size="28"
+         install-size="49"
+         version="0.10.0.201506172156"
+         unpack="false"/>
+
+   <plugin
+         id="tern.core"
+         download-size="184"
+         install-size="354"
+         version="0.10.0.201506172156"
+         unpack="false"/>
+
+   <plugin
+         id="tern.eclipse.ide.core"
+         download-size="86"
+         install-size="172"
+         version="0.10.0.201506172156"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.snc.engprod.eclipse.fixsnc.feature"
+      label="Fix Eclipse Workspace"
+      version="1.1.5"
+      provider-name="ServiceNow">
+
+   <description url="http://www.example.com/description">
+      Components that help maintain an Eclipse Workspace for Glide development.
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      Copyright 2014 ServiceNow, Inc.
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      Licensed as-is.  Just click the accept button.
+   </license>
+
+   <plugin
+         id="com.snc.engprod.eclipse.FixSncPlugin"
+         download-size="1607"
+         install-size="1827"
+         version="1.1.5.201406301757"
+         unpack="false"/>
+
+</feature>

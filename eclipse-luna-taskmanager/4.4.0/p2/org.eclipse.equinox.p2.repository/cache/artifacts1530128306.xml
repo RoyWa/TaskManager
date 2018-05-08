@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?artifactRepository class='org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository' version='1.0.0'?><repository name="workspace-mechanic" type="org.eclipse.equinox.p2.artifact.repository.simpleRepository" version="1">
+  <mappings size="3">
+    <rule output="${repoUrl}/plugins/${id}_${version}.jar" filter="(&amp; (classifier=osgi.bundle))" />
+    <rule output="${repoUrl}/binary/${id}_${version}" filter="(&amp; (classifier=binary))" />
+    <rule output="${repoUrl}/features/${id}_${version}.jar" filter="(&amp; (classifier=org.eclipse.update.feature))" />
+  </mappings>
+  <artifacts size="20">
+    <artifact id="com.google.eclipse.mechanic" classifier="osgi.bundle" version="0.0.2">
+      <properties size="2">
+        <property name="artifact.size" value="544" />
+        <property name="download.size" value="149524" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="osgi.bundle" version="0.0.8">
+      <properties size="2">
+        <property name="artifact.size" value="578" />
+        <property name="download.size" value="363779" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="org.eclipse.update.feature" version="0.1.5">
+      <properties size="2">
+        <property name="download.contentType" value="application/zip" />
+        <property name="download.size" value="6470" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="org.eclipse.update.feature" version="0.4.0">
+      <properties size="2">
+        <property name="download.contentType" value="application/zip" />
+        <property name="download.size" value="6469" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="osgi.bundle" version="0.1.5">
+      <properties size="2">
+        <property name="artifact.size" value="612" />
+        <property name="download.size" value="1406650" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="osgi.bundle" version="0.3.3">
+      <properties size="2">
+        <property name="artifact.size" value="612" />
+        <property name="download.size" value="1998686" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="org.eclipse.update.feature" version="0.0.3">
+      <properties size="2">
+        <property name="download.contentType" value="application/zip" />
+        <property name="download.size" value="6311" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="org.eclipse.update.feature" version="0.3.2">
+      <properties size="2">
+        <property name="download.contentType" value="application/zip" />
+        <property name="download.size" value="6469" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="osgi.bundle" version="0.3.0">
+      <properties size="2">
+        <property name="artifact.size" value="612" />
+        <property name="download.size" value="1992227" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="org.eclipse.update.feature" version="0.0.9">
+      <properties size="2">
+        <property name="download.contentType" value="application/zip" />
+        <property name="download.size" value="6469" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="org.eclipse.update.feature" version="0.3.4">
+      <properties size="2">
+        <property name="download.contentType" value="application/zip" />
+        <property name="download.size" value="6470" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="org.eclipse.update.feature" version="0.0.8">
+      <properties size="2">
+        <property name="download.contentType" value="application/zip" />
+        <property name="download.size" value="6469" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="osgi.bundle" version="0.3.2">
+      <properties size="2">
+        <property name="artifact.size" value="612" />
+        <property name="download.size" value="1998674" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="org.eclipse.update.feature" version="0.3.0">
+      <properties size="2">
+        <property name="download.contentType" value="application/zip" />
+        <property name="download.size" value="6469" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="org.eclipse.update.feature" version="0.3.3">
+      <properties size="2">
+        <property name="download.contentType" value="application/zip" />
+        <property name="download.size" value="6470" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="osgi.bundle" version="0.0.9">
+      <properties size="2">
+        <property name="artifact.size" value="578" />
+        <property name="download.size" value="363908" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="osgi.bundle" version="0.3.4">
+      <properties size="2">
+        <property name="artifact.size" value="612" />
+        <property name="download.size" value="2001569" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="osgi.bundle" version="0.0.3">
+      <properties size="2">
+        <property name="artifact.size" value="578" />
+        <property name="download.size" value="309550" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="org.eclipse.update.feature" version="0.0.2">
+      <properties size="2">
+        <property name="download.contentType" value="application/zip" />
+        <property name="download.size" value="6345" />
+      </properties>
+    </artifact>
+    <artifact id="com.google.eclipse.mechanic" classifier="osgi.bundle" version="0.4.0">
+      <properties size="2">
+        <property name="artifact.size" value="646" />
+        <property name="download.size" value="2007880" />
+      </properties>
+    </artifact>
+  </artifacts>
+  <properties size="1">
+    <property name="p2.timestamp" value="1408642055313" />
+  </properties>
+</repository>

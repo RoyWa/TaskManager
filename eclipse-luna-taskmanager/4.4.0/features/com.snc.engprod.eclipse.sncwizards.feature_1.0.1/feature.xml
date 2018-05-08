@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.snc.engprod.eclipse.sncwizards.feature"
+      label="New Wizards"
+      version="1.0.1"
+      provider-name="ServiceNow">
+
+   <description url="http://www.example.com/description">
+      Create new project from templates.
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      Copyright 2014 ServiceNow, Inc.
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      Licensed as-is.  Just click the accept button.
+   </license>
+
+   <plugin
+         id="com.snc.engprod.eclipse.sncwizards"
+         download-size="29"
+         install-size="58"
+         version="1.0.0"
+         unpack="false"/>
+
+</feature>

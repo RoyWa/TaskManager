@@ -1,0 +1,6 @@
+# @title Workspace mechanic source directories
+# @description Set default source directories for workspace mechanic
+# @task_type LASTMOD
+#
+/instance/com.google.eclipse.mechanic/mechanicSourceDirectories=["/Users/omaritani/.eclipse/mechanic","/usr/local/homebrew-now/workspace-mechanic","/usr/local/homebrew-now/workspace-mechanic-luna","/usr/local/homebrew/Cellar/eclipse-luna/4.4.0/configuration/com.google.eclipse.mechanic/mechanic"]
+file_export_version=3.0

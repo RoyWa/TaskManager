@@ -1,0 +1,5 @@
+#Wed May 13 15:50:59 IDT 2015
+-Xms=40m,40m
+-XX\:MaxPermSize\==256m
+-Xmx=512m,512m
+eclipse.userDefined\:-Xmx=1024m

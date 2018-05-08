@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.snc.codesearch.eclipse.feature"
+      label="Multiple Repository Code Search"
+      version="1.0.11"
+      provider-name="ServiceNow">
+
+   <description url="https://buildtools1.service-now.com/kb_view.do?sysparm_article=KB0523253">   
+The ServiceNow Code Search plugin provides the ability to search
+for keywords across all of the repositories that contribute to
+the ServiceNow product.
+
+Release 1.0.9:
+- Added ability to import psf files from the search result
+
+Release 1.0.4:
+- Fixed read timeout for large searches (for real this time!)
+
+Release 1.0.3:
+- Show Import Project error in a dialog for better feedback to
+user
+
+Release 1.0.2:
+- Added context menus to search result items
+- All types:
+- &quot;Info...&quot; show information about the search result item
+- Repository
+- &quot;Clone Repository&quot; clone repository and add to workspace
+- &quot;Add Repository&quot; add existing local repository to workspace
+- Project
+- &quot;Import Project&quot; import project into workspace (clone the repository
+if necessary)
+- File
+- ...actions coming...
+- Significant speed improvements for search results
+- Fixed (some) issues with large search results causing error
+and not returning results
+Remaining issues:
+- ssh passphrase can be entered on the Preferences page, but
+it is not used
+- the help text on the Preferences page does not scroll, so you
+have to resize the dialog to see all of the text
+- still seeing Read Timeout issues on large searches
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      Copyright 2014 ServiceNow, Inc.
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      Licensed as-is.  Just click the accept button.
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.search"/>
+      <import plugin="org.eclipse.jface.text" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.editors" version="3.7.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="com.snc.codesearch.eclipse.SNCCodeSearchPlugin"
+         download-size="135"
+         install-size="293"
+         version="1.0.11"
+         unpack="false"/>
+
+</feature>
