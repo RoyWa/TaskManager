@@ -6,3 +6,4 @@ target
 bin
 .settings
 eclipse-luna-taskmanager/*
+*.xmi
