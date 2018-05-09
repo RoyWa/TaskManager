@@ -5,5 +5,7 @@ target
 *.iml
 bin
 .settings
-eclipse-luna-taskmanager/*
+Eclipse-TaskManager.app
+apache-tomcat-9.0.8
 *.xmi
+*.log
