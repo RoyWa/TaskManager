@@ -5,7 +5,5 @@ target
 *.iml
 bin
 .settings
-apache-tomcat-9.0.8
-Eclipse-TaskManager.app
 *.xmi
 *.log
