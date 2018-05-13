@@ -3,7 +3,6 @@ target
 .repository
 *.swp
 *.iml
-bin
 .settings
 *.xmi
 *.log
