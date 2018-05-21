@@ -6,3 +6,5 @@ target
 .settings
 *.xmi
 *.log
+node_modules
+dist
