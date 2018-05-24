@@ -1,0 +1,8 @@
+${Ansi.GREEN}|-----------------------------------------|
+${Ansi.GREEN}|      Stories Manager                 |
+${Ansi.GREEN}|                                         |
+${Ansi.RED}|      Spring Boot${spring-boot.formatted-version}       |
+${Ansi.GREEN}|                                         |
+${Ansi.GREEN}|      Developer:                         |
+${Ansi.GREEN}|      Roy Wallerstein                    |
+${Ansi.GREEN}|-----------------------------------------|

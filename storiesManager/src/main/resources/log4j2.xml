@@ -1,0 +1,110 @@
+<Configuration status="error" monitorInterval="60">
+    <Properties>
+        <Property name="defualtPattern">%d [%-5p] [%t] [%c{1}]: %m%n</Property>
+    </Properties>
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${defualtPattern}"/>
+        </Console>
+        <RollingFile name="RollingFile" fileName="~/manager.log" 
+                     filePattern="~/archive/manager-%d{MM-dd-yyyy}.log.gz">
+
+            <PatternLayout pattern="${defualtPattern}"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+        <Routing name="RoutingAppender">
+            <Routes pattern="${ctx:username}">
+                <Route>
+                    <RollingFile name="Rolling-${ctx:username}"
+                                 fileName="~/${ctx:username}.log"
+                                 filePattern="~/archive/${ctx:username}.%i.log.gz">
+
+                        <PatternLayout pattern="${defualtPattern}"/>
+                        <RegexFilter regex=".*fail-safe cleanup \(collections\).*" onMatch="DENY" onMismatch="ACCEPT"/>
+                        <SizeBasedTriggeringPolicy size="10MB"/>
+                        <DefaultRolloverStrategy max="10" />
+                        <TimeBasedTriggeringPolicy/>
+                    </RollingFile>
+                </Route>
+                <!-- By having this set to ${ctx:username} it will match when filename is not set in the context -->
+                <Route ref="RollingFile" key="${ctx:username}"/>
+            </Routes>
+        </Routing>
+    </Appenders>
+    <Loggers>
+         <Root level="debug">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Root>
+        <Logger name="org.springframework" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="com.zaxxer" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="com.jayway" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="com.sun" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="org.apache" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="org.hibernate.validator" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+<!--        
+        <Logger name="org.hibernate" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="org.hibernate.bind" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="org.hibernate.engine.QueryParameters" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="org.hibernate.loader.Loader" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="org.hibernate.pretty.Printer" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="org.hibernate.SQL" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="org.hibernate.type" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="org.hibernate.transaction" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="org.jboss" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+-->
+        <Logger name="org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver" level="debug" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+        <Logger name="org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver" level="error" additivity="false">
+            <appender-ref ref="RoutingAppender"/>
+            <appender-ref ref="ConsoleAppender"/>
+        </Logger>
+    </Loggers>
+</Configuration>
