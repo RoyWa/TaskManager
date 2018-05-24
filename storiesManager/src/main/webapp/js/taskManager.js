@@ -41,11 +41,11 @@ class TaskManager extends React.Component {
             stories:{}
         };
 
-        // fetch('http://localhost:51120/restservices/storytasks/list').then(response => response.json()).then((stories) => {
-        //     this.setState({
-        //         stories: stories
-        //     });
-        // });
+        fetch('/stories').then(response => response.json()).then((stories) => {
+            this.setState({
+                stories: stories
+            });
+        });
     }
 
     render(){
